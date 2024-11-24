@@ -15,7 +15,7 @@ var anzhiyu = {
       let timer = setInterval(() => {
         const musiccover = document.querySelector("#anMusic-page .aplayer-pic");
         // 确保player加载完成
-        // console.info(anMusicBg);
+        console.info(anMusicBg);
         if (musiccover) {
           clearInterval(timer);
           anMusicBg.style.backgroundImage = musiccover.style.backgroundImage;
