@@ -1,3 +1,4 @@
+/** Footer 鱼塘样式 **/
 /* 鱼塘固定宽度 */
 canvas:not(#ribbon-canvas),
 #web_bg {
@@ -35,6 +36,93 @@ body {
     width: 100vw;
 }
 
+/** 文章页波浪样式 **/
+.main-hero-waves-area {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    z-index: 5;
+}
+
+.waves-area .waves-svg {
+    width: 100%;
+    height: 5rem;
+}
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+    fill: #f7f9febd;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+    fill: #f7f9fe82;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+    fill: #f7f9fe36;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+    fill: #f7f9fe;
+}
+
+/* 黑色模式背景 */
+[data-theme="dark"] .parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+    fill: #18171dc8;
+}
+
+[data-theme="dark"] .parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+    fill: #18171d80;
+}
+
+[data-theme="dark"] .parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+    fill: #18171d3e;
+}
+
+[data-theme="dark"] .parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+    fill: #18171d;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves-area .waves-svg {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
 /* 页脚透明 */
 /* #footer {
     background: transparent !important;
@@ -65,50 +153,50 @@ body {
 } */
 
 /* 全局默认鼠标指针 */
-body,
+/* body,
 html {
     cursor: url('/custom/cur/HuiRan/Blue/Small/Normal.cur'), auto !important;
-}
+} */
 
 /* 悬停图片时的鼠标指针 */
-img {
+/* img {
     cursor: url('/custom/cur/HuiRan/Blue/Small/Normal.cur'), auto !important;
-}
+} */
 
 /* 选择链接标签时的鼠标指针 */
-a:hover {
+/* a:hover {
     cursor: url('/custom/cur/HuiRan/Blue/Small/Link.cur'), auto;
-}
+} */
 
 /* 选中输入框时的鼠标指针 */
-input:hover {
+/* input:hover {
     cursor: url('/custom/cur/HuiRan/Blue/Small/TextSelectionBordered.cur'), auto;
-}
+} */
 
 /* 悬停按钮时的鼠标指针 */
-button:hover {
+/* button:hover {
     cursor: url('/custom/cur/HuiRan/Blue/Small/Link.cur'), auto !important;
-}
+} */
 
 /* 悬停列表标签时的鼠标指针 */
-i:hover {
+/* i:hover {
     cursor: url('/custom/cur/HuiRan/Blue/Small/Link.cur'), auto !important;
-}
+} */
 
 /* 悬停页脚链接标签（例如页脚徽标）时的鼠标指针 */
-#footer-wrap a:hover {
+/* #footer-wrap a:hover {
     cursor: url('/custom/cur/HuiRan/Blue/Small/Link.cur'), auto;
-}
+} */
 
 /* 悬停页码时的鼠标指针 */
-#pagination .page-number:hover {
+/* #pagination .page-number:hover {
     cursor: url('/custom/cur/HuiRan/Blue/Small/Link.cur'), auto;
-}
+} */
 
 /* 悬停菜单栏时的鼠标指针 */
-#nav .site-page:hover {
+/* #nav .site-page:hover {
     cursor: url('/custom/cur/HuiRan/Blue/Small/Link.cur'), auto;
-}
+} */
 
 /* .article-meta-wrap .post-meta-date:hover {
     cursor: url('/custom/cur/HuiRan/Blue/Small/Normal.cur'), auto;
