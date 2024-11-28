@@ -47,15 +47,11 @@
       </tags>
   </entry>
   <entry>
-    <title>十大排序算法 ing</title>
-    <url>/b7e144d1/</url>
-    <content><![CDATA[<h2 id="十大排序算法"><a href="#十大排序算法" class="headerlink" title="十大排序算法"></a>十大排序算法</h2><h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">bubble</span><span class="params">()</span> &#123;</span><br><span class="line">	<span class="type">int</span>[] arr = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">12</span>, <span class="number">7</span>, <span class="number">3</span>, <span class="number">5</span>&#125;;</span><br><span class="line">	<span class="comment">// 外层循环代表比较了几圈：n-1 圈</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; arr.length - <span class="number">1</span> - i; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">				<span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> arr[j];</span><br><span class="line">				arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">				arr[j + <span class="number">1</span>] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  简单选择排序（升序）</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ChoiceSort</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[] sortArray(<span class="type">int</span>[] numx) &#123;</span><br><span class="line">		<span class="keyword">if</span>(nums.length == <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> nums;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i&lt; nums.length; i++) &#123;</span><br><span class="line">			<span class="type">int</span> <span class="variable">minIndex</span> <span class="operator">=</span> i;<span class="comment">/*最小数的下标，每个循环开始总是假设第一个数最小*/</span></span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i; j&lt; nums.length;j++) &#123;</span><br><span class="line">				<span class="keyword">if</span>(numb[j] &lt; nums[minIndex]) &#123;<span class="comment">/*找到最小的数*/</span></span><br><span class="line">					minIndex = j;<span class="comment">/*将最小数的索引保存*/</span></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println(<span class="string">&quot;最小数为：&quot;</span> + nums[minIndex]);</span><br><span class="line">			<span class="comment">/*交换最小数和i当前所指的元素*/</span></span><br><span class="line">			<span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> nums[minIndex];</span><br><span class="line">			nums[minIndex] = nums[i];</span><br><span class="line">			PrintArray.print(nums);</span><br><span class="line">			System.out.println(<span class="string">&quot;-----&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> nums;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    	PrintArray.print(PrintArray.SRC);</span><br><span class="line">    	System.out.println(<span class="string">&quot;==================================================&quot;</span>)</span><br><span class="line">    	<span class="type">int</span>[] dest=<span class="keyword">new</span> <span class="title class_">ChoiceSort</span>().sortArray(PrintArray.SRC);</span><br><span class="line">    	PrintArray.print(desc);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
+    <title>Java-Stream</title>
+    <url>/1650c766/</url>
+    <content><![CDATA[]]></content>
       <tags>
-        <tag>算法</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -276,17 +272,24 @@
       </tags>
   </entry>
   <entry>
-    <title>Java-Stream</title>
-    <url>/1650c766/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>ElasticSearch</title>
     <url>/d48132d3/</url>
     <content><![CDATA[<h2 id="ElasticSearch-速成"><a href="#ElasticSearch-速成" class="headerlink" title="ElasticSearch 速成"></a>ElasticSearch 速成</h2><h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><h4 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h4>]]></content>
+  </entry>
+  <entry>
+    <title>十大排序算法 ing</title>
+    <url>/b7e144d1/</url>
+    <content><![CDATA[<h2 id="十大排序算法"><a href="#十大排序算法" class="headerlink" title="十大排序算法"></a>十大排序算法</h2><h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">bubble</span><span class="params">()</span> &#123;</span><br><span class="line">	<span class="type">int</span>[] arr = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">12</span>, <span class="number">7</span>, <span class="number">3</span>, <span class="number">5</span>&#125;;</span><br><span class="line">	<span class="comment">// 外层循环代表比较了几圈：n-1 圈</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; arr.length - <span class="number">1</span> - i; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">				<span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> arr[j];</span><br><span class="line">				arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">				arr[j + <span class="number">1</span>] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  简单选择排序（升序）</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ChoiceSort</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[] sortArray(<span class="type">int</span>[] numx) &#123;</span><br><span class="line">		<span class="keyword">if</span>(nums.length == <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> nums;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i&lt; nums.length; i++) &#123;</span><br><span class="line">			<span class="type">int</span> <span class="variable">minIndex</span> <span class="operator">=</span> i;<span class="comment">/*最小数的下标，每个循环开始总是假设第一个数最小*/</span></span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i; j&lt; nums.length;j++) &#123;</span><br><span class="line">				<span class="keyword">if</span>(numb[j] &lt; nums[minIndex]) &#123;<span class="comment">/*找到最小的数*/</span></span><br><span class="line">					minIndex = j;<span class="comment">/*将最小数的索引保存*/</span></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println(<span class="string">&quot;最小数为：&quot;</span> + nums[minIndex]);</span><br><span class="line">			<span class="comment">/*交换最小数和i当前所指的元素*/</span></span><br><span class="line">			<span class="type">int</span> <span class="variable">temp</span> <span class="operator">=</span> nums[minIndex];</span><br><span class="line">			nums[minIndex] = nums[i];</span><br><span class="line">			PrintArray.print(nums);</span><br><span class="line">			System.out.println(<span class="string">&quot;-----&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> nums;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    	PrintArray.print(PrintArray.SRC);</span><br><span class="line">    	System.out.println(<span class="string">&quot;==================================================&quot;</span>)</span><br><span class="line">    	<span class="type">int</span>[] dest=<span class="keyword">new</span> <span class="title class_">ChoiceSort</span>().sortArray(PrintArray.SRC);</span><br><span class="line">    	PrintArray.print(desc);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
   </entry>
   <entry>
     <title>Ubuntu 修改默认启动方式</title>
@@ -301,8 +304,12 @@
 
 <p><img src="/756a7bd6/image-20230919011708085.png" alt="image-20230919011708085"></p>
 ]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
       <tags>
         <tag>Ubuntu</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -377,8 +384,24 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Slf4j</span></span><br><span class="line"><span class="meta">@SpringBootTest</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">StudyApplicationTests</span>  &#123;</span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">contextLoads</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">Properties</span> <span class="variable">props</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Properties</span>();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="type">InputStreamReader</span> <span class="variable">inputStreamReader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(</span><br><span class="line">                <span class="built_in">this</span>.getClass().getClassLoader().getResourceAsStream(<span class="string">&quot;test.properties&quot;</span>),</span><br><span class="line">                StandardCharsets.UTF_8);</span><br><span class="line">            props.load(inputStreamReader);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">RuntimeException</span>(e);</span><br><span class="line">        &#125;</span><br><span class="line">        log.info(<span class="string">&quot;Java 原生获取 properties: &#123;&#125;&quot;</span>, props.getProperty(<span class="string">&quot;test.type&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
       <tags>
         <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>输出 n 行空心菱形</title>
+    <url>/4b76df2e/</url>
+    <content><![CDATA[<h2 id="输入奇数-n，输出-n-行空心菱形"><a href="#输入奇数-n，输出-n-行空心菱形" class="headerlink" title="输入奇数 n，输出 n 行空心菱形"></a>输入奇数 n，输出 n 行空心菱形</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * &lt;p&gt;</span></span><br><span class="line"><span class="comment"> * 输入奇数 n，输出 n 行空心菱形</span></span><br><span class="line"><span class="comment"> * &lt;/p&gt;</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> n</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">printDiamond</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    <span class="comment">// x,y 坐标</span></span><br><span class="line">    <span class="type">int</span> x, y;</span><br><span class="line">    n = n / <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span> (x = -n; x &lt;= n; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (y = -n; y &lt;= n; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (Math.abs(x) + Math.abs(y) == n) &#123;</span><br><span class="line">                System.out.print(<span class="string">&quot;*&quot;</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.print(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -598,19 +621,6 @@
 ]]></content>
       <tags>
         <tag>k8s</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>输出 n 行空心菱形</title>
-    <url>/4b76df2e/</url>
-    <content><![CDATA[<h2 id="输入奇数-n，输出-n-行空心菱形"><a href="#输入奇数-n，输出-n-行空心菱形" class="headerlink" title="输入奇数 n，输出 n 行空心菱形"></a>输入奇数 n，输出 n 行空心菱形</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * &lt;p&gt;</span></span><br><span class="line"><span class="comment"> * 输入奇数 n，输出 n 行空心菱形</span></span><br><span class="line"><span class="comment"> * &lt;/p&gt;</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> n</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">printDiamond</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    <span class="comment">// x,y 坐标</span></span><br><span class="line">    <span class="type">int</span> x, y;</span><br><span class="line">    n = n / <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span> (x = -n; x &lt;= n; x++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (y = -n; y &lt;= n; y++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (Math.abs(x) + Math.abs(y) == n) &#123;</span><br><span class="line">                System.out.print(<span class="string">&quot;*&quot;</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.out.print(<span class="string">&quot; &quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.print(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -868,7 +878,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /docker-app/nginx/conf</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>创建临时节点用于挂载容器卷</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d -p 80:80 --name nginx nginx</span><br><span class="line"></span><br><span class="line">docker <span class="built_in">cp</span> -a nginx:/etc/nginx/nginx.conf /docker-app/nginx/conf</span><br><span class="line">docker <span class="built_in">cp</span> -a nginx:/etc/nginx/conf.d /docker-app/nginx/conf</span><br><span class="line">docker <span class="built_in">cp</span> -a nginx:/var/log/nginx /docker-app/nginx/log</span><br><span class="line">docker <span class="built_in">cp</span> -a nginx:/usr/share/nginx/html /docker-app/nginx/html</span><br><span class="line"></span><br><span class="line">docker stop nginx</span><br><span class="line">docker <span class="built_in">rm</span> nginx</span><br><span class="line">docker <span class="built_in">rm</span> -f nginx</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d -p 80:80 --name nginx nginx</span><br><span class="line"></span><br><span class="line">docker <span class="built_in">cp</span> -a nginx:/etc/nginx/nginx.conf /docker-app/nginx/conf</span><br><span class="line">docker <span class="built_in">cp</span> -a nginx:/etc/nginx/conf.d /docker-app/nginx/conf</span><br><span class="line">docker <span class="built_in">cp</span> -a nginx:/var/log/nginx /docker-app/nginx/log</span><br><span class="line">docker <span class="built_in">cp</span> -a nginx:/usr/share/nginx/html /docker-app/nginx/html</span><br><span class="line"></span><br><span class="line">docker stop nginx</span><br><span class="line">docker <span class="built_in">rm</span> nginx</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>修改 nginx.conf</p>
 <ul>
@@ -885,12 +895,46 @@
 <li><p>启动</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h3 id="安装-ELK（ing）"><a href="#安装-ELK（ing）" class="headerlink" title="安装 ELK（ing）"></a>安装 ELK（ing）</h3>]]></content>
+<h3 id="安装-ELK"><a href="#安装-ELK" class="headerlink" title="安装 ELK"></a>安装 ELK</h3><ol>
+<li><p>创建目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /docker-app/ELK/&#123;elasticsearch,kibana&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建临时节点用于挂载容器卷</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run -d -p 9200:9200 -p 9300:9300 -e ES_JAVA_OPTS=<span class="string">&quot;-Xms256m -Xmx256m&quot;</span> -e <span class="string">&quot;discovery.type=single-node&quot;</span> --name elasticsearch elasticsearch:7.17.25</span><br><span class="line">docker run -d --name kibana -p 5601:5601 kibana:7.17.25</span><br><span class="line"></span><br><span class="line">docker <span class="built_in">cp</span> -a elasticsearch:/usr/share/elasticsearch/config/ /docker-app/ELK/elasticsearch</span><br><span class="line">docker <span class="built_in">cp</span> -a elasticsearch:/usr/share/elasticsearch/data/ /docker-app/ELK/elasticsearch</span><br><span class="line">docker <span class="built_in">cp</span> -a elasticsearch:/usr/share/elasticsearch/logs/ /docker-app/ELK/elasticsearch</span><br><span class="line">docker <span class="built_in">cp</span> -a elasticsearch:/usr/share/elasticsearch/plugins/ /docker-app/ELK/elasticsearch</span><br><span class="line"></span><br><span class="line">docker <span class="built_in">cp</span> -a kibana:/usr/share/kibana/config/ /docker-app/ELK/kibana</span><br><span class="line"></span><br><span class="line">docker stop elasticsearch kibana</span><br><span class="line">docker <span class="built_in">rm</span> elasticsearch kibana</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改 Kibana 界面为中文</p>
+<p>在 <code>/docker-app/ELK/kibana/config/kibana.yml</code> 的结尾加上 <code>i18n.locale: &quot;zh-CN&quot;</code></p>
+</li>
+<li><p>编写 <code>docker-compose.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">elasticsearch:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">elasticsearch:7.17.25</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">elasticsearch</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;9200:9200&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;9300:9300&quot;</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./elasticsearch/data:/usr/share/elasticsearch/data</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./elasticsearch/plugins:/usr/share/elasticsearch/plugins</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;discovery.type=single-node&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;ES_JAVA_OPTS=-Xms512m -Xmx512m&quot;</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">es_network</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">kibana:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">kibana:7.17.25</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">kibana</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;5601:5601&quot;</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml</span></span><br><span class="line">    <span class="attr">depends_on:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">elasticsearch</span></span><br><span class="line">    <span class="attr">networks:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">es_network</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">unless-stopped</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line">  <span class="attr">es_network:</span></span><br><span class="line">    <span class="attr">driver:</span> <span class="string">bridge</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改配置</p>
+<ol>
+<li><p>添加配置</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">elasticsearch.username: logadmin</span><br><span class="line">elasticsearch.password: qwe123456</span><br><span class="line">xpack.screenshotting.brower.chromium.disableSandbox: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>为 es 创建用户</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">elasticsearch-users useradd logadmin</span><br><span class="line">qwe123456</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加权限</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">bin/elasticsearch-users roles -a superuser logadmin</span><br><span class="line">bin/elasticsearch-users roles -a kibana_system logadmin</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+]]></content>
       <categories>
         <category>Docker</category>
       </categories>
       <tags>
         <tag>Docker</tag>
+        <tag>Redis</tag>
+        <tag>MySQL</tag>
+        <tag>elasticsearch</tag>
+        <tag>kibana</tag>
+        <tag>ELK</tag>
       </tags>
   </entry>
 </search>
